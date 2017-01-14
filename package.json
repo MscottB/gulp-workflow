@@ -1,6 +1,6 @@
 {
   "name": "g-workflow",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Workflow Base node, gulp, npm.",
   "main": "index.html",
   "scripts": {
@@ -24,10 +24,12 @@
     "gulp-uglify": "^2.0.0"
   },
   "engines": {
-    "node": ">= 0.9.0"
+    "node": ">= 4.4.0",
+    "npm": ">=2.14.2"
   },
   "keywords": [
     "gulp",
-    "gulp-workflow-base"
+    "gulp-workflow-base",
+    "web"
   ]
 }
