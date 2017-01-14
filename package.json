@@ -1,32 +1,33 @@
 {
   "name": "g-workflow",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Workflow Base node, gulp, npm.",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },"repository": {
+  },
+  "repository": {
     "type": "git",
     "url": "https://github.com/skotvarg/gulp-workflow.git"
   },
   "author": "michael scott",
   "license": "UNLICENSED",
   "devDependencies": {
-    "browser-sync": "^2.18.2",
+    "browser-sync": "^2.18.6",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-cssnano": "^2.1.2",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.1.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.0.0",
+    "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.0.0"
   },
   "engines": {
     "node": ">= 0.9.0"
   },
-   "keywords": [
-     "gulp",
-     "gulp-workflow-base"
-   ]
+  "keywords": [
+    "gulp",
+    "gulp-workflow-base"
+  ]
 }
