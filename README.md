@@ -4,15 +4,15 @@ Base para ocupar Gulp, en proyectos de desarrollo web.
 
 ##Plugins Ocupados
 
--[browser-sync](https://www.npmjs.com/package/browser-sync)
--[autoprefixer](https://www.npmjs.com/package/gulp-autoprefixer)
--[cssnano](https://www.npmjs.com/package/gulp-cssnano)
--[htmlmin](https://www.npmjs.com/package/gulp-htmlmin)
--[imagemin](https://www.npmjs.com/package/gulp-imagemin)
--[notify](https://www.npmjs.com/package/gulp-notify)
--[rename](https://www.npmjs.com/package/gulp-rename)
--[sass](https://www.npmjs.com/package/gulp-sass)
--[uglify](https://www.npmjs.com/package/gulp-uglify)
+-**browser-sync**[Link](https://www.npmjs.com/package/browser-sync)
+-**autoprefixer**[Link](https://www.npmjs.com/package/gulp-autoprefixer)
+-**cssnano**[Link](https://www.npmjs.com/package/gulp-cssnano)
+-**htmlmin**[Link](https://www.npmjs.com/package/gulp-htmlmin)
+-**imagemin**[Link](https://www.npmjs.com/package/gulp-imagemin)
+-**notify**[Link](https://www.npmjs.com/package/gulp-notify)
+-**rename**[Link](https://www.npmjs.com/package/gulp-rename)
+-**sass**[Link](https://www.npmjs.com/package/gulp-sass)
+-**uglify**[Link](https://www.npmjs.com/package/gulp-uglify)
 
 ##Comandos a ocupar
 
