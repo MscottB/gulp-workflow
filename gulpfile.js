@@ -1,3 +1,6 @@
+/*===================
+*Plugins a Ocupar
+ ====================*/
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
@@ -6,7 +9,12 @@ var imagemin = require('gulp-imagemin');
 var autoprefixer = require('gulp-autoprefixer');
 var htmlmin = require('gulp-htmlmin');
 var rename = require("gulp-rename");
+var notify = require('gulp-notify');
 var browserSync = require('browser-sync').create();
+
+/*===========================
+*Browser-Sync & Tarea Default
+ ===========================*/
 
 gulp.task('default', ['css','javascript','minificarhtml'], function(){
     browserSync.init({
@@ -20,12 +28,19 @@ gulp.task('default', ['css','javascript','minificarhtml'], function(){
 
 });
 
+/*===================
+* Tarea sobre *.html
+ ====================*/
+
 gulp.task('minificarhtml', function(){
     return gulp.src('./*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('app'));
 });
 
+/*====================
+*Tarea sobre imegenes
+ =====================*/
 
 gulp.task('imagenes', function(){
     gulp.src('app/img/*')
@@ -33,6 +48,9 @@ gulp.task('imagenes', function(){
         .pipe(gulp.dest('app/img/min'));
 });
 
+/*===================
+*Tarea sobre *.js
+ ====================*/
 
 gulp.task('javascript', function () {
     gulp.src('app/js/*.js')
@@ -40,9 +58,15 @@ gulp.task('javascript', function () {
         .pipe(gulp.dest('app/js/dist'));
 });
 
+/*=====================
+*Tarea sobre css y scss
+ ======================*/
+
 gulp.task('css', function(){
     return gulp.src('scss/**/*.scss')
-    .pipe(sass())
+    .pipe(sass()).on('error', notify.onError(function (error) {
+       return 'Error al compilar sass.\n Detalles en la consola.\n' + error;
+    }))
     .pipe(cssnano())
     .pipe(autoprefixer({
         browsers: ['last 10 versions'],
@@ -50,6 +74,7 @@ gulp.task('css', function(){
     }))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css'))
+    .pipe(notify({ title: "SASS", message: "OK: Archivo compilado" }))
     .pipe(browserSync.stream());
 });
 
