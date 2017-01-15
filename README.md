@@ -4,15 +4,15 @@ Base para ocupar Gulp, en proyectos de desarrollo web.
 
 ##Plugins Ocupados
 
--**browser-sync**[Link](https://www.npmjs.com/package/browser-sync)
--**autoprefixer**[Link](https://www.npmjs.com/package/gulp-autoprefixer)
--**cssnano**[Link](https://www.npmjs.com/package/gulp-cssnano)
--**htmlmin**[Link](https://www.npmjs.com/package/gulp-htmlmin)
--**imagemin**[Link](https://www.npmjs.com/package/gulp-imagemin)
--**notify**[Link](https://www.npmjs.com/package/gulp-notify)
--**rename**[Link](https://www.npmjs.com/package/gulp-rename)
--**sass**[Link](https://www.npmjs.com/package/gulp-sass)
--**uglify**[Link](https://www.npmjs.com/package/gulp-uglify)
+- **browser-sync** ([Link](https://www.npmjs.com/package/browser-sync))
+- **autoprefixer** ([Link](https://www.npmjs.com/package/gulp-autoprefixer))
+- **cssnano** ([Link](https://www.npmjs.com/package/gulp-cssnano))
+- **htmlmin** ([Link](https://www.npmjs.com/package/gulp-htmlmin))
+- **imagemin** ([Link](https://www.npmjs.com/package/gulp-imagemin))
+- **notify** ([Link](https://www.npmjs.com/package/gulp-notify))
+- **rename** ([Link](https://www.npmjs.com/package/gulp-rename))
+- **sass** ([Link](https://www.npmjs.com/package/gulp-sass))
+- **uglify** ([Link](https://www.npmjs.com/package/gulp-uglify))
 
 ##Comandos a ocupar
 
@@ -24,7 +24,7 @@ gulp
 
 ###Tarea sobre *.html
 
-Minifica el archivo >index.html
+Minifica el archivo `index.html`
 ```
 gulp minificarhtml
 ```
@@ -45,7 +45,7 @@ gulp javascript
 
 ###Tarea sobre sass
 
-Procesa los archivos >scss.
+Procesa los archivos `scss`.
 ```
 gulp css
 ```
