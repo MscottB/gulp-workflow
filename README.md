@@ -2,7 +2,7 @@
 
 Base para ocupar Gulp, en proyectos de desarrollo web.
 
-##Plugins Ocupados
+##Dependencias de Desarrollo Ocupadas
 
 - **browser-sync** ([Link](https://www.npmjs.com/package/browser-sync))
 - **autoprefixer** ([Link](https://www.npmjs.com/package/gulp-autoprefixer))
