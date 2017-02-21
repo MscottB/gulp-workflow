@@ -10,6 +10,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var htmlmin = require('gulp-htmlmin');
 var rename = require("gulp-rename");
 var notify = require('gulp-notify');
+var imageminpngcrush = require('imagemin-pngcrush');
 var browserSync = require('browser-sync').create();
 
 /*===========================
@@ -44,8 +45,12 @@ gulp.task('minificarhtml', function(){
 
 gulp.task('imagenes', function(){
     gulp.src('app/img/*')
-        .pipe(imagemin())
+        .pipe(
+            imagemin({
+              plugins:[imageminPngcrush()]
+            }))
         .pipe(gulp.dest('app/img/min'));
+        .pipe(notify("Compresion de Imagenes Lista!"));
 });
 
 /*===================

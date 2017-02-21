@@ -13,7 +13,7 @@
   "author": "michael scott",
   "license": "UNLICENSED",
   "devDependencies": {
-    "browser-sync": "^2.18.6",
+    "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-cssnano": "^2.1.2",
@@ -22,7 +22,8 @@
     "gulp-notify": "^2.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^2.0.0"
+    "gulp-uglify": "^2.0.1",
+    "imagemin-pngcrush": "^5.0.0"
   },
   "engines": {
     "node": ">= 4.4.0",
