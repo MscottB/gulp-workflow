@@ -13,6 +13,7 @@ Base para ocupar Gulp, en proyectos de desarrollo web.
 - **rename** ([Link](https://www.npmjs.com/package/gulp-rename))
 - **sass** ([Link](https://www.npmjs.com/package/gulp-sass))
 - **uglify** ([Link](https://www.npmjs.com/package/gulp-uglify))
+- **imagemin-pngcrush** ([Link](https://www.npmjs.com/package/imagemin-pngcrush))
 
 ##Comandos a ocupar
 
