@@ -9,7 +9,7 @@ Base para ocupar Gulp, en proyectos de desarrollo web.
 - **cssnano** ([Link](https://www.npmjs.com/package/gulp-cssnano))
 - **htmlmin** ([Link](https://www.npmjs.com/package/gulp-htmlmin))
 - **imagemin** ([Link](https://www.npmjs.com/package/gulp-imagemin))
-- **notify** ([Link](https://www.npmjs.com/package/gulp-notify))
+- **node-notifier** ([Link](https://www.npmjs.com/package/node-notifier))
 - **rename** ([Link](https://www.npmjs.com/package/gulp-rename))
 - **sass** ([Link](https://www.npmjs.com/package/gulp-sass))
 - **uglify** ([Link](https://www.npmjs.com/package/gulp-uglify))
