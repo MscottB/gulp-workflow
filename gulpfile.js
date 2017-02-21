@@ -9,8 +9,8 @@ var imagemin = require('gulp-imagemin');
 var autoprefixer = require('gulp-autoprefixer');
 var htmlmin = require('gulp-htmlmin');
 var rename = require("gulp-rename");
-var notify = require('gulp-notify');
 var imageminpngcrush = require('imagemin-pngcrush');
+var notifier = require('node-notifier');
 var browserSync = require('browser-sync').create();
 
 /*===========================
@@ -26,6 +26,7 @@ gulp.task('default', ['css','javascript','minificarhtml'], function(){
     gulp.watch("./*.html", ['minificarhtml']);
     gulp.watch("app/js/*.js", ['javascript']).on('change', browserSync.reload);
     gulp.watch("app/*.html").on('change', browserSync.reload);
+    notifier.notify({'title': 'Tarea Deafult Exitosa','message': 'pagina compilada & inicando'});
 
 });
 
@@ -44,13 +45,13 @@ gulp.task('minificarhtml', function(){
  =====================*/
 
 gulp.task('imagenes', function(){
-    gulp.src('app/img/*')
+    gulp.src('app/img/*.{png,jpg,jpeg,gif,svg}')
         .pipe(
             imagemin({
-              plugins:[imageminPngcrush()]
+              plugins:[imageminpngcrush()]
             }))
         .pipe(gulp.dest('app/img/min'));
-        .pipe(notify("Compresion de Imagenes Lista!"));
+        notifier.notify({'title': 'Gulp Imagenes','message': 'Imagenes Comprimidas Exitosamente'});
 });
 
 /*===================
@@ -69,9 +70,7 @@ gulp.task('javascript', function () {
 
 gulp.task('css', function(){
     return gulp.src('scss/**/*.scss')
-    .pipe(sass()).on('error', notify.onError(function (error) {
-       return 'Error al compilar sass.\n Detalles en la consola.\n' + error;
-    }))
+    .pipe(sass())
     .pipe(cssnano())
     .pipe(autoprefixer({
         browsers: ['last 10 versions'],
@@ -79,7 +78,6 @@ gulp.task('css', function(){
     }))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css'))
-    .pipe(notify({ title: "SASS", message: "OK: Archivo compilado" }))
     .pipe(browserSync.stream());
 });
 
