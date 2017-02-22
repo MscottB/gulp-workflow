@@ -1,6 +1,6 @@
 {
   "name": "g-workflow",
-  "version": "0.0.6",
+  "version": "0.0.9",
   "description": "Workflow Base node, gulp, npm.",
   "main": "index.html",
   "scripts": {
