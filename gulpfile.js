@@ -1,17 +1,17 @@
 /*===================
 *Plugins a Ocupar
  ====================*/
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var uglify = require('gulp-uglify');
-var cssnano = require('gulp-cssnano');
-var imagemin = require('gulp-imagemin');
-var autoprefixer = require('gulp-autoprefixer');
-var htmlmin = require('gulp-htmlmin');
-var rename = require("gulp-rename");
-var imageminpngcrush = require('imagemin-pngcrush');
-var notifier = require('node-notifier');
-var browserSync = require('browser-sync').create();
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    uglify = require('gulp-uglify'),
+    cssnano = require('gulp-cssnano'),
+    imagemin = require('gulp-imagemin'),
+    autoprefixer = require('gulp-autoprefixer'),
+    htmlmin = require('gulp-htmlmin'),
+    rename = require("gulp-rename"),
+    imageminpngcrush = require('imagemin-pngcrush'),
+    notifier = require('node-notifier'),
+    browserSync = require('browser-sync').create();
 
 /*===========================
 *Browser-Sync & Tarea Default
